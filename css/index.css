@@ -15,8 +15,8 @@ body {
   display: grid;
   grid-template-rows: 6rem 1fr 3rem;
   font-family: sans-serif;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
+  min-height: 100vh;
+  /* height: calc(var(--vh, 1vh) * 100); */
 }
 
 /* HEADER */
@@ -48,7 +48,7 @@ body > main > section > section {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 1.3rem;
 }
 
