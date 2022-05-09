@@ -12,7 +12,7 @@ body {
   background-size: cover;
   background-position: center;
   display: grid;
-  grid-template-rows: 6rem 1fr 3rem;
+  grid-template-rows: 6rem 1fr 2rem;
   font-family: sans-serif;
   min-height: 100vh;
   /* height: calc(var(--vh, 1vh) * 100); */
@@ -38,13 +38,15 @@ body > main > section > p {
 }
 body > main > section {
   display: flex;
-  justify-content: space-evenly;
   flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
   gap: 2.5rem;
 }
 body > main > section > section {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1.3rem;
 }
