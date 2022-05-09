@@ -1,10 +1,10 @@
-@import url(colors.css); 
+@import url(colors.css);
 
 * {
   margin: 0;
-padding: 0;
-box-sizing: border-box;
-gap: 0;
+  padding: 0;
+  box-sizing: border-box;
+  gap: 0;
 }
 
 /* BODY */
@@ -15,14 +15,13 @@ body {
   display: grid;
   grid-template-rows: 6rem 1fr 3rem;
   font-family: sans-serif;
-  font-size: 1rem;
   min-height: 100vh;
 }
-
 
 /* HEADER */
 body > header {
   text-align: center;
+  padding: 1rem 0;
 }
 body > header h1 {
   color: var(--main-color);
@@ -31,29 +30,34 @@ body > header h1 {
 }
 
 /* SECTION */
-body > main > section {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 2rem;
-  font-size: 1rem;
-  line-height: 1.3rem;
+body > main > section > p {
   color: var(--light-color);
+  font-size: 1rem;
+  line-height: 1.5rem;
   text-align: center;
 }
-body > main section p {
-  color: var(--light-color);
+body > main > section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2.5rem;
 }
 body > main > section > section {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
-  gap: 1.2rem;
+  justify-content: center;
+  gap: 1.3rem;
+}
+
+/* BUTTONS */
+button > * {
+  pointer-events: none;
 }
 
 /* BUTTONS - DRUM */
-.drum > button {
+.btn-drum {
   color: var(--light-color);
   background-color: var(--dark-color);
   border: thin solid var(--main-color);
@@ -66,36 +70,32 @@ body > main > section > section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
 }
-button > * {
-  pointer-events: none;
-}
-.drum > button span {
+.btn-drum span {
   color: var(--main-color);
   font-size: 2.3rem;
   font-weight: 600;
 }
+
 /* BUTTONS - RECORD */
-.recordControls > button {
+.btn-record {
   border: thin solid var(--main-color);
+  background-color: var(--dark-color);
+  color: var(--light-color);
   padding: 0.5rem 1rem;
   text-transform: uppercase;
   font-weight: 600;
-  background-color: var(--dark-color);
-  color: var(--light-color);
 }
 
 /* FOOTER */
 body > footer {
   color: var(--light-color);
-  border-top: thin solid  var(--main-color);
+  border-top: thin solid var(--main-color);
   text-align: center;
   padding: 1rem;
 }
 
 @media (min-width: 600px) {
-
   /* BODY */
   body {
     display: grid;
@@ -111,7 +111,7 @@ body > footer {
     gap: 5rem;
     font-size: 1.3rem;
   }
-  .recordControls > button {
+  .btn-record {
     padding: 1rem 2.5rem;
     font-size: 1rem;
   }
