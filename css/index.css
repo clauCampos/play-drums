@@ -38,12 +38,13 @@ body > main > section > p {
 }
 body > main > section {
   display: flex;
+  justify-content: space-evenly;
   flex-direction: column;
   gap: 2.5rem;
 }
 body > main > section > section {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 1.3rem;
 }
@@ -97,9 +98,9 @@ body > footer {
   /* BODY */
   body {
     display: grid;
-    grid-template-rows: 12rem 1fr 3rem;
+    grid-template-rows: 8rem 1fr 2rem;
     font-family: sans-serif;
-    padding: 1rem;
+    padding: 0.5rem;
   }
   body > header h1 {
     font-size: 4rem;
