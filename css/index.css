@@ -15,7 +15,7 @@ body {
   display: grid;
   grid-template-rows: 6rem 1fr 3rem;
   font-family: sans-serif;
-  min-height: 100vh;
+  height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
 }
 
