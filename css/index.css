@@ -40,14 +40,12 @@ body > main > section > p {
 body > main > section {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
   gap: 2.5rem;
 }
 body > main > section > section {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-evenly;
   gap: 1.3rem;
 }
