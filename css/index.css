@@ -22,9 +22,9 @@ body {
 /* HEADER */
 body > header {
   text-align: center;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
-body > header h1 {
+body > header > h1 {
   color: var(--main-color);
   font-family: "Oleo Script Swash Caps";
   font-size: 3rem;
@@ -87,10 +87,11 @@ button > * {
 
 /* FOOTER */
 body > footer {
+  text-align: center;
   color: var(--light-color);
   border-top: thin solid var(--main-color);
-  text-align: center;
-  padding: 1rem;
+  font-size: 0.9rem;
+  padding: 0.5rem;
 }
 
 @media (min-width: 600px) {
@@ -99,6 +100,7 @@ body > footer {
     display: grid;
     grid-template-rows: 12rem 1fr 3rem;
     font-family: sans-serif;
+    padding: 1rem;
   }
   body > header h1 {
     font-size: 4rem;
