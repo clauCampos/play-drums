@@ -1,5 +1,12 @@
 @import url(colors.css); 
 
+* {
+  margin: 0;
+padding: 0;
+box-sizing: border-box;
+gap: 0;
+}
+
 /* BODY */
 body {
   background-image: url(/img/drummer.jpg);
@@ -10,28 +17,17 @@ body {
   font-family: sans-serif;
   font-size: 1rem;
   min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 
 /* HEADER */
 body > header {
   text-align: center;
-  color: var(--light-color);
 }
 body > header h1 {
   color: var(--main-color);
   font-family: "Oleo Script Swash Caps";
   font-size: 3rem;
-  text-align: center;
-}
-
-/* MAIN */
-body > main {
-  display: flex;
-  justify-content: center;
 }
 
 /* SECTION */
@@ -39,12 +35,14 @@ body > main > section {
   display: flex;
   justify-content: center;
   flex-direction: column;
-
   gap: 2rem;
   font-size: 1rem;
   line-height: 1.3rem;
   color: var(--light-color);
   text-align: center;
+}
+body > main section p {
+  color: var(--light-color);
 }
 body > main > section > section {
   display: flex;
@@ -53,11 +51,13 @@ body > main > section > section {
   justify-content: space-evenly;
   gap: 1.2rem;
 }
+
+/* BUTTONS - DRUM */
 .drum > button {
+  color: var(--light-color);
   background-color: var(--dark-color);
   border: thin solid var(--main-color);
   border-radius: 50%;
-  color: var(--light-color);
   width: 5.5rem;
   height: 5.5rem;
   padding: 0.5rem;
@@ -71,12 +71,12 @@ body > main > section > section {
 button > * {
   pointer-events: none;
 }
-
 .drum > button span {
   color: var(--main-color);
   font-size: 2.3rem;
   font-weight: 600;
 }
+/* BUTTONS - RECORD */
 .recordControls > button {
   border: thin solid var(--main-color);
   padding: 0.5rem 1rem;

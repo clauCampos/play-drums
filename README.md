@@ -19,4 +19,4 @@ Play drums project is a web app to have some fun playing drums.
 
 ### Thanks for checking our project 🙏🏼
 
- If you have enjoyed visiting this web, tell others about this project 📢 
+ If you have enjoyed visiting this web, tell others about this project 📢 # drum
